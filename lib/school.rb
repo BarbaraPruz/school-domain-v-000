@@ -8,7 +8,6 @@ class School
 
   def add_student (name, grade)
     @roster[grade] ||= []
-    end
     # It would make sense to sort entries on insert since sorted roster would
     # be a common requirement. But test requires names not be sorted at this time!
     @roster[grade] << name
