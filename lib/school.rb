@@ -14,11 +14,11 @@ class School
   end
 
   def grade (n)
-    @roster[n]
+    roster[n]
   end
 
   def sort
     # storing sorted output back in roster so next request for sort will be fast
-    @roster.each { | grade, names | names.sort! }
+    roster.each { | grade, names | names.sort! }
   end
 end
